@@ -4,9 +4,11 @@ import Home from './pages/Home';
 import Rooms from './pages/Rooms';
 import Single_room from './pages/Single_room';
 import Error from './pages/Error';
+import Navbar from './Components/Navbar';
 function App() {
   return (
     <>
+    <Navbar/>
     <Router>
       <Switch>
       <Route exact path = "/" component = {Home}/>
