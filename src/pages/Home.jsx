@@ -15,6 +15,11 @@ const NavLink = styled(Link)`
          text-decoration:none;
          color:white;
      }
+     @media(max-width:450px){
+      letter-spacing:0;
+      padding:0.3em;
+      font-size:14px;
+  }
 `
 
 
