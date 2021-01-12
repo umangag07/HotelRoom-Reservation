@@ -1,15 +1,18 @@
 import React from 'react'
 import BackgroundImgprop from '../Components/BackgroundImg'
-import landingPagePhoto from '../../src/Assets/images/landingpage.jpg' 
+import landingPagePhoto from '../../src/Assets/images/poolview.jpg' 
 import Banner from '../Components/Banner'
 import {Link} from 'react-router-dom'
 import styled from 'styled-components'
+import Service from '../Components/Service'
+import Marginer from '../Components/Marginer'
 
 const NavLink = styled(Link)`
     background-color:#d89216;
-    color:black;
+   
     border-radius:5px;
     padding:0.5em;
+    color:#040c55;
     letter-spacing:2px;
      :hover{
          text-decoration:none;
@@ -26,11 +29,13 @@ const NavLink = styled(Link)`
 function Home() {
     return (
         <>
-          <BackgroundImgprop height="89vh" imgSrc={landingPagePhoto} >
-          <Banner title="Luxirious rooms available" subtitle="at just Rs 5000">
+          <BackgroundImgprop height="75vh" imgSrc={landingPagePhoto} >
+        <Banner title="Luxirious rooms available" subtitle="at just Rs 5000" color="rgb(5, 11, 12,0.5)">
                   <NavLink to='/rooms'>Book Now</NavLink>  
               </Banner>
           </BackgroundImgprop>
+          <Service/>
+          <Marginer direction="vertical" margin="2em"/>
           
         </>
     )

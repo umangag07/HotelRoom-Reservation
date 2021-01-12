@@ -8,7 +8,7 @@ const BannerComponent = styled.div`
   flex-direction: column;
   width: 40vw;
   height: 25vh;
-  background-color: ${(props) => props.color ? props.color : "rgb(75, 44, 67,0.7)"};
+  background-color: ${(props) => props.color ? props.color : "rgb(5, 11, 12,0.7)"};
   border-radius: 5px;
   @media(max-width:810px){
     width: 60vw;
@@ -42,14 +42,15 @@ const H1 = styled.h1`
 `;
 const H2 = styled.h4`
   color: white;
+  
   @media(max-width:450px){
-    font-size:16px;
+    font-size:14px;
   }
 `;
 function Banner({ title, subtitle, color, children }) {
   return (
     <>
-      <BannerComponent bgcolor={color}>
+      <BannerComponent color={color}>
         <H1>{title}</H1>
         <Line />
         <H2>{subtitle}</H2>
