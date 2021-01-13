@@ -1,6 +1,6 @@
 import React from 'react'
 import BackgroundImg from '../Components/BackgroundImg'
-import room from '../../src/Assets/images/rooms/room1.jpg' 
+import room from '../../src/Assets/images/rooms/room.jpg' 
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import Banner from '../Components/Banner'
