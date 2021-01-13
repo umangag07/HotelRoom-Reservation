@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FaShuttleVan, FaBeer, FaHiking } from "react-icons/fa";
+import {IoFastFoodOutline } from "react-icons/io5";
 import Marginer from "./Marginer";
 import Title from "./Title";
 
@@ -65,10 +66,10 @@ function Service() {
             we give hiking resources at very minimal cost. Make your stay exciting with us.`,
     },
     {
-      icon: FaShuttleVan,
-      title: "Free Shuttle",
-      desc: `We provide you with free shuttle service on checkout to nearest Airport, Railway Station,
-                    Bus Station at no extra charge. Everything is included with the bookings.`,
+      icon: IoFastFoodOutline,
+      title: "1 complimentary Breakfast",
+      desc: `We give complimentary breakfast to all kind of bookings. Even more when you book our exotic bookings 
+             plans, in which throughout your stay breakfast will be free.`,
     },
   ];
   return (

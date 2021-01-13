@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 import styled from 'styled-components'
 import Service from '../Components/Service'
 import Marginer from '../Components/Marginer'
+import FeaturedComponents from '../Components/FeaturedComponents'
 
 const NavLink = styled(Link)`
     background-color:#d89216;
@@ -36,6 +37,7 @@ function Home() {
           </BackgroundImgprop>
           <Service/>
           <Marginer direction="vertical" margin="2em"/>
+          <FeaturedComponents/>
           
         </>
     )
