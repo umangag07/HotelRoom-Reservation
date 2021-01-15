@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {RoomContext} from '../Context'
+import Loading from './Loading';
 
 
 export class FeaturedComponents extends Component {
@@ -12,6 +13,7 @@ export class FeaturedComponents extends Component {
         return (
             <div>
                 {greet} {name} from featured rooms 
+                <Loading/>
             </div>
         )
     }
