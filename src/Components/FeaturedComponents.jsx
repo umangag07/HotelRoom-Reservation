@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import {RoomContext} from '../Context'
 import Loading from './Loading';
-
+import Room from './Room';
+import Title from './Title';
+import Marginer from "./Marginer";
 
 export class FeaturedComponents extends Component {
     static contextType = RoomContext
@@ -12,8 +14,11 @@ export class FeaturedComponents extends Component {
         console.log(value)
         return (
             <div>
+                <Title line="Featured Rooms"/>
+                <Marginer direction="vertical" margin="3.5em" />
                 {greet} {name} from featured rooms 
                 <Loading/>
+                <Room/>
             </div>
         )
     }
