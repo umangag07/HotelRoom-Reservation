@@ -8,12 +8,13 @@ import Title from "./Title";
 
 const ServiceContainer = styled.div`
   margin-top: 3em;
-  width: 100%;
+  width: 100vw;
   min-height: 50vh;
   background-color: #a5a5a5;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left:0;
 
   @media(max-width:820px){
     flex-direction:column;
