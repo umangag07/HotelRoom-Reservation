@@ -79,7 +79,7 @@ function Service() {
         {Services.map((item, index) => {
           return (
             <>
-              <ServiceElement>
+              <ServiceElement >
                 <Marginer direction="vertical" margin="1.5em" />
                 <item.icon color="#a56b06" fontSize="30px" />
                 <Marginer direction="vertical" margin="1.5em" />
