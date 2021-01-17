@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Single_room from "../pages/Single_room";
 const RoomContainer = styled.div`
   height: 30vh;
   width: 22vw;
@@ -46,14 +47,14 @@ const RoomContainer = styled.div`
 
 `;
 export default function Room({ room }) {
-  console.log(room);
-  const { name, images, price } = room;
+  console.log(room.id);
+  const { name, images, price, id } = room;
   return (
     <>
-    <Link to={`rooms/${name}`} style={{ textDecoration: 'none' }}>
+    <Link to={`rooms/${id}`} style={{ textDecoration: 'none' }}>
       <RoomContainer image={images[0]}>
         <span>Rs{price} / Night</span>
-        <Link to={`rooms/${name}`} />
+     
         <h3>{name}</h3>
       </RoomContainer>
       </Link>

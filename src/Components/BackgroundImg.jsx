@@ -9,6 +9,7 @@ const Container =  styled.div`
     align-items:center;
     background-image:url(${props=>props.src});
     background-size: 100% 100%;
+    
 `
 function BackgroundImg(props) {
     const{imgSrc,height,children} = props

@@ -12,7 +12,7 @@ const FeaturedRoomContainer = styled.div`
       align-items:center;
       min-height: 50vh;
       width:100%;
-      border:1px solid black;
+     /* border:1px solid black; */
 
 `
 const FeaturedRoom = styled.div`

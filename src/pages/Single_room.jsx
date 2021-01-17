@@ -1,13 +1,59 @@
 import React, { Component } from 'react'
-
-
-
+import Defaultbcg from '../Assets/images/rooms/room9.jpg'
+import BackgroundImgprop from '../Components/BackgroundImg'
+import Banner from '../Components/Banner'
+import {Link} from 'react-router-dom'
+import {RoomContext} from '../Context'
+import styled from 'styled-components'
+const NavLink = styled(Link)`
+    background-color:#d89216;
+   
+    border-radius:5px;
+    padding:0.5em;
+    color:#040c55;
+    letter-spacing:2px;
+     :hover{
+         text-decoration:none;
+         color:white;
+     }
+     @media(max-width:450px){
+      letter-spacing:0;
+      padding:0.3em;
+      font-size:14px;
+  }
+`
 export class Single_room extends Component {
+    constructor(props) {
+        super(props)
+        console.log(this.props.match.params.roomType)
+        this.state = {
+             id:this.props.match.params.roomType,
+             Defaultbcg
+        }
+    }
+   static contextType = RoomContext
+    // componentDidMount(){}
+     
+    
     render() {
+        const {getRoom} = this.context;
+        const room = getRoom(this.state.id);
+         console.log(room)
+        // const SingleRoom = room ? <About/>:<Error/>
+        if(!room){
+            return(<div>Page noy found</div>)
+            
+        }
+        const {breakfast, capacity, description, featured, name, price ,type, images, extras} = room
+        
         return (
-            <div>
-                Hello single room page
-            </div>
+            <>
+               <BackgroundImgprop height="75vh" imgSrc={images[0]} >
+        <Banner title ={name} subtitle='' color="rgb(5, 11, 12,0.5)">
+                  <NavLink to='/rooms'>Go Back To Rooms</NavLink>  
+              </Banner>
+          </BackgroundImgprop>
+            </>
         )
     }
 }
