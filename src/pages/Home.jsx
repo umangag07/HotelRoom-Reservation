@@ -7,24 +7,8 @@ import styled from 'styled-components'
 import Service from '../Components/Service'
 import Marginer from '../Components/Marginer'
 import FeaturedComponents from '../Components/FeaturedComponents'
+import { NavLink } from '../Components/Button'
 
-const NavLink = styled(Link)`
-    background-color:#d89216;
-   
-    border-radius:5px;
-    padding:0.5em;
-    color:#040c55;
-    letter-spacing:2px;
-     :hover{
-         text-decoration:none;
-         color:white;
-     }
-     @media(max-width:450px){
-      letter-spacing:0;
-      padding:0.3em;
-      font-size:14px;
-  }
-`
 
 
 function Home() {

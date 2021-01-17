@@ -5,23 +5,8 @@ import Banner from '../Components/Banner'
 import {Link} from 'react-router-dom'
 import {RoomContext} from '../Context'
 import styled from 'styled-components'
-const NavLink = styled(Link)`
-    background-color:#d89216;
-   
-    border-radius:5px;
-    padding:0.5em;
-    color:#040c55;
-    letter-spacing:2px;
-     :hover{
-         text-decoration:none;
-         color:white;
-     }
-     @media(max-width:450px){
-      letter-spacing:0;
-      padding:0.3em;
-      font-size:14px;
-  }
-`
+import { NavLink } from '../Components/Button'
+
 export class Single_room extends Component {
     constructor(props) {
         super(props)
