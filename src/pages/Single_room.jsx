@@ -6,7 +6,7 @@ import { RoomContext } from "../Context";
 import { NavLink } from "../Components/Button";
 import styled from "styled-components";
 import Title from "../Components/Title";
-import '../index.css'
+import "../index.css";
 import Marginer from "../Components/Marginer";
 
 const SingleRoomView = styled.div`
@@ -68,8 +68,8 @@ const AboutRoomSection = styled.div`
   height: 50vh;
   padding: 0 8vw 0 8vw;
   /* border: 5px solid cyan; */
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const Description = styled.div`
@@ -78,10 +78,10 @@ const Description = styled.div`
   height: 50vh;
   width: 40vw;
   /* border: 2px solid red; */
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding:10px;
-  letter-spacing:2px;
-  color:#1c2124;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+  letter-spacing: 2px;
+  color: #1c2124;
 `;
 const Info = styled.div`
   display: flex;
@@ -89,11 +89,11 @@ const Info = styled.div`
   height: 50vh;
   width: 40vw;
   /* border: 2px solid red; */
-  letter-spacing:3px;
-  padding:10px;
-  padding-left:5vw;
-  color:#1c2124;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  padding: 10px;
+  padding-left: 5vw;
+  color: #1c2124;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 `;
 const Extras = styled.div`
   display: flex;
@@ -101,21 +101,21 @@ const Extras = styled.div`
   height: 40vh;
   width: 100vw;
   /* border: 2px solid red; */
-  letter-spacing:3px;
-  align-items:left;
-  color:#1c2124;
-  padding-left:20vh;
-  padding-right:20vh;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 3px;
+  align-items: left;
+  color: #1c2124;
+  padding-left: 20vh;
+  padding-right: 20vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 `;
 const ExtraList = styled.div`
   display: flex;
-  flex-wrap:wrap;
-  justify-content:flex-start;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 
-  li{
-      margin:1em;
-      font-size:20px;
+  li {
+    margin: 1em;
+    font-size: 20px;
   }
 `;
 export class Single_room extends Component {
@@ -136,7 +136,7 @@ export class Single_room extends Component {
     console.log(room);
     // const SingleRoom = room ? <About/>:<Error/>
     if (!room) {
-      return <div>Page noy found</div>;
+      return <div>Page not found</div>;
     }
     const {
       breakfast,
@@ -165,7 +165,6 @@ export class Single_room extends Component {
           </ImageSection>
           <Marginer direction="vertical" margin="2.5em" />
           <AboutRoomSection>
-         
             <Description>
               <Title line="Description" align="left" />
               <Marginer direction="vertical" margin="2.5em" />
@@ -176,17 +175,18 @@ export class Single_room extends Component {
               <Marginer direction="vertical" margin="2.5em" />
               <h4>Price: Rs{price}</h4>
               <h4>Capacity: {capacity}</h4>
-              <h4>Breakfast: {breakfast?"Included":"Not-Included"}</h4>
+              <h4>Breakfast: {breakfast ? "Included" : "Not-Included"}</h4>
               <h4>Type: {type}</h4>
-               
             </Info>
           </AboutRoomSection>
           <Extras>
-          <Title line="Extras" align="left" lineWidth="15"/>
-          <ExtraList> {extras.map((service,index)=>{
-              return <li>{service}</li>
-          })}</ExtraList>
-         
+            <Title line="Extras" align="left" lineWidth="15" />
+            <ExtraList>
+              {" "}
+              {extras.map((service, index) => {
+                return <li>{service}</li>;
+              })}
+            </ExtraList>
           </Extras>
         </SingleRoomView>
       </>

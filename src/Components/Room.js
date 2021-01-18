@@ -9,13 +9,16 @@ const RoomContainer = styled.div`
   box-shadow: 5px 10px 18px #888888;
   background-image: url(${(props) => props.image});
   background-size: 100% 100%;
- 
+  @media (max-width: 1200px) {
+    height: 20vh;
+    width: 45vw;
+  }
   @media (max-width: 810px) {
     height: 20vh;
-    width: 65vw;
+    width: 45vw;
   }
   @media (max-width: 450px) {
-    height: 25vh;
+    height: 19vh;
     width: 80vw;
   }
  :hover{
@@ -37,11 +40,14 @@ const RoomContainer = styled.div`
     top: 25vh;
     color: #051c32;
     background-color: #a5a5a5;
+    @media (max-width: 1200px) {
+    top:16vh;
+  }
     @media (max-width: 810px) {
-      top: 15vh;
+      top: 16vh;
     }
     @media (max-width: 450px) {
-      top: 20vh;
+      top: 15vh;
     }
   }
 
