@@ -15,6 +15,13 @@ import r10_c from "../src/Assets/images/rooms/room10_couple.jpg";
 import r11_d from "../src/Assets/images/rooms/room11_double.jpg";
 import r6_d from "../src/Assets/images/rooms/room6_double.jpg";
 import r2_d from "../src/Assets/images/rooms/room2_double.jpg";
+import by1 from "../src/Assets/images/Balcony1.jpg";
+import by2 from "../src/Assets/images/Balcony2.jpg";
+import w1 from "../src/Assets/images/WorkStation1.jpg";
+import w2 from "../src/Assets/images/WorkStation2.jpg";
+import w3 from "../src/Assets/images/WorkStation3.jpg";
+import g from "../src/Assets/images/General.jpg";
+import bkft from "../src/Assets/images/Breakfast.jpg";
 
 export default [
   {
@@ -29,7 +36,8 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo,
+              street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -49,6 +57,15 @@ export default [
         {
           url: c1,
         },
+        {
+          url: by1,
+        },
+        {
+          url: w1,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -64,7 +81,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -84,6 +101,15 @@ export default [
         {
           url: c2,
         },
+        {
+          url: by2,
+        },
+        {
+          url: w2,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -99,7 +125,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -119,6 +145,15 @@ export default [
         {
           url: c1,
         },
+        {
+          url: by2,
+        },
+        {
+          url: w3,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -134,7 +169,7 @@ export default [
       breakfast: true,
       featured: true,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -154,6 +189,15 @@ export default [
         {
           url: c2,
         },
+        {
+          url: by1,
+        },
+        {
+          url: w1,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -169,7 +213,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -189,6 +233,15 @@ export default [
         {
           url: c1,
         },
+        {
+          url: by2,
+        },
+        {
+          url: w3,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -204,7 +257,7 @@ export default [
       breakfast: true,
       featured: true,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -224,6 +277,15 @@ export default [
         {
           url: c2,
         },
+        {
+          url: by2,
+        },
+        {
+          url: w2,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -239,7 +301,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -259,6 +321,15 @@ export default [
         {
           url: c1,
         },
+        {
+          url: by1,
+        },
+        {
+          url: w1,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -274,7 +345,7 @@ export default [
       breakfast: true,
       featured: true,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -294,6 +365,15 @@ export default [
         {
           url: c2,
         },
+        {
+          url: by2,
+        },
+        {
+          url: w3,
+        },
+        {
+          url: g,
+        },
       ],
     },
   },
@@ -309,7 +389,7 @@ export default [
       breakfast: true,
       featured: true,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -329,6 +409,18 @@ export default [
         {
           url: c1,
         },
+        {
+          url: by1,
+        },
+        {
+          url: w3,
+        },
+        {
+          url: g,
+        },
+        {
+          url: bkft,
+        },
       ],
     },
   },
@@ -344,7 +436,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
@@ -379,7 +471,7 @@ export default [
       breakfast: true,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
-             the window and balcony to sit and relax.`,
+             the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
       extras: [
         "Plush pillows and breathable bed linens",
         "Soft, oversized bath towels",
