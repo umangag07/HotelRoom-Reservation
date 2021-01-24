@@ -3,7 +3,6 @@ import {RoomContext} from '../Context'
 import Loading from './Loading';
 import Room from './Room';
 import Title from './Title';
-import Marginer from "./Marginer";
 import styled from 'styled-components';
 
 const FeaturedRoomContainer = styled.div`

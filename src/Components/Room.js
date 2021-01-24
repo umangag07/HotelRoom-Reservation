@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Single_room from "../pages/Single_room";
 const RoomContainer = styled.div`
   height: 30vh;
   width: 22vw;
