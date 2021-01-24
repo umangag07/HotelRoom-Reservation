@@ -173,7 +173,7 @@ export class Single_room extends Component {
             <Info>
               <Title line="Info" align="center" />
               <Marginer direction="vertical" margin="2.5em" />
-              <h4>Price: Rs{price}</h4>
+              <h4>Price: Rs {price}</h4>
               <h4>Capacity: {capacity}</h4>
               <h4>Breakfast: {breakfast ? "Included" : "Not-Included"}</h4>
               <h4>Type: {type}</h4>
