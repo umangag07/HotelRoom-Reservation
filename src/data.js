@@ -23,7 +23,7 @@ import w3 from "../src/Assets/images/WorkStation3.jpg";
 import g from "../src/Assets/images/General.jpg";
 import bkft from "../src/Assets/images/Breakfast.jpg";
 
-export default [
+export const Data = [
   {
     roomId: {
       id: "1",
