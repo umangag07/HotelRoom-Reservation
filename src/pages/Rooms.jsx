@@ -1,29 +1,13 @@
 import React, { useContext } from "react";
 import BackgroundImg from "../Components/BackgroundImg";
 import room from "../../src/Assets/images/rooms/room.jpg";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Banner from "../Components/Banner";
 import Title from "../Components/Title";
 import Marginer from "../Components/Marginer";
 import { RoomContext } from "../Context";
 import Room from "../Components/Room";
-const NavLink = styled(Link)`
-  background-color: #d89216;
-  color: black;
-  border-radius: 5px;
-  padding: 0.5em;
-  letter-spacing: 2px;
-  :hover {
-    text-decoration: none;
-    color: white;
-  }
-  @media (max-width: 450px) {
-    letter-spacing: 0;
-    padding: 0.3em;
-    font-size: 14px;
-  }
-`;
+import {NavLink} from '../Components/Button'
 
 const RoomConatainer = styled.div`
   display: flex;
@@ -31,17 +15,23 @@ const RoomConatainer = styled.div`
   min-height: 120vh;
   /* border:2px solid red; */
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 
   @media (max-width: 1200px) {
-    min-height: 150vh;
+    min-height: 170vh;
+    align-items: center;
   }
   @media (max-width: 810px) {
-    min-height: 150vh;
+    min-height: 170vh;
+    align-items: center;
+  }
+  @media (max-width: 470px) {
+    min-height: 180vh;
+    align-items: center;
   }
   @media (max-width: 450px) {
-    min-height: 240vh;
+    min-height: 290vh;
     align-items: center;
   }
 `;
@@ -54,7 +44,7 @@ function Rooms() {
     <>
       <BackgroundImg height="70vh" imgSrc={room}>
         <Banner title=" OUR ROOMS " subtitle="" color="rgb(5, 11, 12,0.5)">
-          <NavLink to="/">Go Home</NavLink>
+          <NavLink to="/">Go Home </NavLink>
         </Banner>
       </BackgroundImg>
       <Title line="All Rooms" />
@@ -64,7 +54,7 @@ function Rooms() {
           return (
             <>
               <Room key={index} room={room} />
-              <Marginer direction="horizontal" margin="1.5em" />
+              {/* <Marginer direction="horizontal" margin="1em" /> */}
             </>
           );
         })}

@@ -74,7 +74,7 @@ export const Data = [
       id: "2",
     },
     roomFields: {
-      name: "Double Economy",
+      name: "Double-Eco",
       type: "family",
       price: "2500",
       capacity: 2,

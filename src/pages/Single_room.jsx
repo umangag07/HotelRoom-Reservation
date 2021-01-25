@@ -32,8 +32,8 @@ const ImageSection = styled.div`
     min-height: 80vh;
     padding: 2% 5% 0 5%;
   }
-  @media (max-width: 450px) {
-    min-height: 180vh;
+  @media (max-width: 530px) {
+    min-height: 130vh;
     padding: 2% 0% 0 0%;
   }
 `;
@@ -50,16 +50,17 @@ const Image = styled.div`
   /* border:4px solid #a5a5a5; */
   @media (max-width: 1150px) {
     height: 20vh;
-    width: 21vw;
+    width: 24vw;
   }
-  @media (max-width: 810px) {
-    height: 20vh;
-    width: 40vw;
+  @media (max-width: 850px) {
+    height: 19vh;
+    width: 42vw;
   }
-  @media (max-width: 450px) {
-    height: 25vh;
+  @media (max-width: 530px) {
+    height: 19vh;
     width: 70vw;
   }
+  
 `;
 
 const AboutRoomSection = styled.div`
@@ -67,9 +68,21 @@ const AboutRoomSection = styled.div`
   width: 100%;
   height: 50vh;
   padding: 0 8vw 0 8vw;
-  /* border: 5px solid cyan; */
+  border: 5px solid cyan;
   flex-wrap: wrap;
   justify-content: center;
+  @media (max-width: 850px) {
+    padding:0 0px 0 0px;
+  }
+  @media (max-width: 550px) {
+    padding:0 0px 0 0px;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    height:65vh;
+  }
+  @media (max-width: 420px) {
+    height:75vh;
+  }
 `;
 
 const Description = styled.div`
@@ -77,36 +90,68 @@ const Description = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 40vw;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
   letter-spacing: 2px;
   color: #1c2124;
+  @media (max-width: 850px) {
+  width: 50vw;
+  }
+  @media (max-width: 550px) {
+    width:100%;
+    height:35vh;
+  }
+  @media (max-width: 420px) {
+    height:45vh;
+  }
 `;
 const Info = styled.div`
   display: flex;
   flex-direction: column;
   height: 50vh;
   width: 40vw;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   letter-spacing: 3px;
   padding: 10px;
   padding-left: 5vw;
   color: #1c2124;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  @media (max-width: 850px) {
+    width: 45vw;
+  }
+  @media (max-width: 550px) {
+    width:100%;
+    height:30vh;
+  }
 `;
 const Extras = styled.div`
   display: flex;
   flex-direction: column;
   height: 40vh;
   width: 100vw;
-  /* border: 2px solid red; */
+  border: 2px solid red;
   letter-spacing: 3px;
   align-items: left;
   color: #1c2124;
   padding-left: 20vh;
   padding-right: 20vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  @media (max-width: 1550px) {
+    padding-left:10vw;
+    padding-right:10vw;
+  }
+  @media (max-width: 810px) {
+    padding-left:5vw;
+    padding-right:0vw;
+    letter-spacing:1.5px;
+  }
+  @media (max-width: 550px) {
+    padding-left:1vw;
+    padding-right:0vw;
+    letter-spacing:0.5px;
+    height:50vh;
+  }
 `;
 const ExtraList = styled.div`
   display: flex;
