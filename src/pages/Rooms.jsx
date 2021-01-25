@@ -36,6 +36,15 @@ const RoomConatainer = styled.div`
   }
 `;
 
+const FilterComponent = styled.div`
+       display:flex;
+       width:100vw;
+       height:15vh;
+       border:2px solid red;
+       align-items:center;
+
+`;
+
 function Rooms() {
   const Allrooms = useContext(RoomContext);
   const Rooms = Allrooms.rooms;
@@ -47,7 +56,8 @@ function Rooms() {
           <NavLink to="/">Go Home </NavLink>
         </Banner>
       </BackgroundImg>
-      <Title line="All Rooms" />
+      <Title line="Search Your Room" />
+      <FilterComponent> </FilterComponent>
       <Marginer direction="vertical" margin="2.5em" />
       <RoomConatainer>
         {Rooms.map((room, index) => {

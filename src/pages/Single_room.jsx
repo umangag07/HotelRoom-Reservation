@@ -68,7 +68,7 @@ const AboutRoomSection = styled.div`
   width: 100%;
   height: 50vh;
   padding: 0 8vw 0 8vw;
-  border: 5px solid cyan;
+  /* border: 5px solid cyan; */
   flex-wrap: wrap;
   justify-content: center;
   @media (max-width: 850px) {
@@ -90,7 +90,7 @@ const Description = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 40vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 10px;
   letter-spacing: 2px;
@@ -111,7 +111,7 @@ const Info = styled.div`
   flex-direction: column;
   height: 50vh;
   width: 40vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   letter-spacing: 3px;
   padding: 10px;
   padding-left: 5vw;
@@ -130,7 +130,7 @@ const Extras = styled.div`
   flex-direction: column;
   height: 40vh;
   width: 100vw;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   letter-spacing: 3px;
   align-items: left;
   color: #1c2124;
