@@ -11,7 +11,7 @@ import Marginer from "../Components/Marginer";
 
 const SingleRoomView = styled.div`
   width: 100%;
-  min-height: 140vh;
+  min-height: 170vh;
   /* border:2px solid red; */
   display: flex;
   flex-direction: column;
@@ -80,8 +80,8 @@ const AboutRoomSection = styled.div`
     flex-wrap:nowrap;
     height:65vh;
   }
-  @media (max-width: 420px) {
-    height:75vh;
+  @media (max-width: 440px) {
+    height:100vh;
   }
 `;
 
@@ -102,8 +102,8 @@ const Description = styled.div`
     width:100%;
     height:35vh;
   }
-  @media (max-width: 420px) {
-    height:45vh;
+  @media (max-width: 440px) {
+    height:55vh;
   }
 `;
 const Info = styled.div`
@@ -122,16 +122,17 @@ const Info = styled.div`
   }
   @media (max-width: 550px) {
     width:100%;
-    height:30vh;
+    height:35vh;
   }
 `;
 const Extras = styled.div`
   display: flex;
   flex-direction: column;
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   /* border: 2px solid red; */
   letter-spacing: 3px;
+  font-weight:600;
   align-items: left;
   color: #1c2124;
   padding-left: 20vh;
@@ -150,7 +151,8 @@ const Extras = styled.div`
     padding-left:1vw;
     padding-right:0vw;
     letter-spacing:0.5px;
-    height:50vh;
+    height:60vh;
+    
   }
 `;
 const ExtraList = styled.div`
