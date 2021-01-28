@@ -15,8 +15,8 @@ const RoomConatainer = styled.div`
   width: 100%;
   padding-left:3.7vw;
   /* min-height: 30vh; */
-  max-height: 120vh;
-  border:2px solid red;
+  /* max-height: 120vh; */
+  /* border:2px solid red; */
   flex-wrap: wrap;
   justify-content: flex-start;
    align-items: center; 
@@ -55,10 +55,21 @@ const RoomConatainer = styled.div`
  
 `;
 
+const RoomNotFound = styled.div`
+    display:flex;
+     font-size:40px;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-align:center;
+     letter-spacing:2.3px;
+     text-align:center;
+     justify-content:center;
+
+`
+
 function Rooms() {
   const Allrooms = useContext(RoomContext);
   const Rooms = Allrooms.sortedRooms;
-  // console.log(Rooms, Allrooms);
+   console.log("hola rooms",Rooms.length);
   return (
     <>
       <BackgroundImg height="70vh" imgSrc={room}>
@@ -67,10 +78,10 @@ function Rooms() {
         </Banner>
       </BackgroundImg>
       <Title line="Search Your Room" />
-      <FilterRooms> </FilterRooms>
+      <FilterRooms />
       <Marginer direction="vertical" margin="2.5em" />
       <RoomConatainer>
-        {Rooms.map((room, index) => {
+        {Rooms.length?Rooms.map((room, index) => {
           return (
             <>
              
@@ -78,7 +89,7 @@ function Rooms() {
               <Marginer direction="horizontal" margin="1em" />
             </>
           );
-        })}
+        }):<RoomNotFound><h1>No matching rooms found</h1></RoomNotFound>}
       </RoomConatainer>
     </>
   );

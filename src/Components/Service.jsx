@@ -69,7 +69,7 @@ function Service() {
     {
       icon: IoFastFoodOutline,
       title: "1 complimentary Breakfast",
-      desc: `We give complimentary breakfast to all kind of bookings. Even more when you book our exotic bookings 
+      desc: `We give complimentary breakfast to all featured rooms and couple stays. Even more when you book exotic bookings 
              plans, in which throughout your stay breakfast will be free.`,
     },
   ];

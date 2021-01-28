@@ -1,12 +1,49 @@
-
 body {
   margin: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   -webkit-font-smoothing: antialiased;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+select {
+  border-radius: 10px;
+  width: 15em;
+  background-color: #162c42;
+  color: white;
+}
+option:hover {
+  background-color: black;
+}
+
+label {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+mark {
+  color: #855201;
+}
+
+@media screen and (max-width: 450px) {
+  select {
+    width: 4em;
+  }
+  label {
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  }
+}
+@media screen and (max-width: 910px) {
+  select {
+    width: 10em;
+  }
+}
+@media screen and (max-width: 710px) {
+  select {
+    width: 6em;
+  }
 }

@@ -33,7 +33,7 @@ export const Data = [
       type: "single",
       price: "1500",
       capacity: 1,
-      breakfast: true,
+      breakfast: false,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
              the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo,
@@ -78,7 +78,7 @@ export const Data = [
       type: "family",
       price: "2500",
       capacity: 2,
-      breakfast: true,
+      breakfast: false,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
              the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
@@ -122,7 +122,7 @@ export const Data = [
       type: "single",
       price: "3000",
       capacity: 1,
-      breakfast: true,
+      breakfast: false,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
              the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
@@ -210,7 +210,7 @@ export const Data = [
       type: "pair",
       price: "2700",
       capacity: 2,
-      breakfast: true,
+      breakfast: false,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
              the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
@@ -298,7 +298,7 @@ export const Data = [
       type: "single",
       price: "5000",
       capacity: 1,
-      breakfast: true,
+      breakfast: false,
       featured: false,
       description: `A very descent room with the vibe of nature, beautiful view of the resort from
              the window and balcony to sit and relax.Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. `,
