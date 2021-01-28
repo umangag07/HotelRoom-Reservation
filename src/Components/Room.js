@@ -4,6 +4,7 @@ import styled from "styled-components";
 const RoomContainer = styled.div`
   height: 30vh;
   width: 22vw;
+  margin-bottom:10vh;
   background-color: #a5a5a5;
   box-shadow: 5px 10px 18px #888888;
   background-image: url(${(props) => props.image});

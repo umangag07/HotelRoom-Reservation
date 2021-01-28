@@ -13,28 +13,46 @@ import FilterRooms from "../Components/FilterRooms";
 const RoomConatainer = styled.div`
   display: flex;
   width: 100%;
-  min-height: 120vh;
-  /* border:2px solid red; */
+  padding-left:3.7vw;
+  /* min-height: 30vh; */
+  max-height: 120vh;
+  border:2px solid red;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+   align-items: center; 
 
   @media (max-width: 1200px) {
-    min-height: 170vh;
-    align-items: center;
+    min-height: 60vh;
+    max-height: 170vh;
+    padding-left:3.7vw; 
+    align-items:flex-start;
+     justify-content:flex-start;
+    /* align-items: center; */
   }
   @media (max-width: 810px) {
-    min-height: 170vh;
-    align-items: center;
+     min-height: 50vh; 
+    max-height: 200vh;
+    /* align-items: center; */
+     align-items:flex-start;
+     justify-content:space-between;
+     padding-left:3vw; 
+
   }
   @media (max-width: 470px) {
-    min-height: 180vh;
-    align-items: center;
+    min-height: 40vh;
+    max-height: 180vh;
+    padding-left:2vw;
+    align-items:flex-start;
+    /* align-items: center; */
   }
   @media (max-width: 450px) {
-    min-height: 290vh;
-    align-items: center;
+    /* min-height: 90vh; */
+     max-height: 390vh;
+     padding-left:9vw;
+    /* padding-left:2.5em; */
+    /* align-items: center; */
   }
+ 
 `;
 
 function Rooms() {
@@ -54,8 +72,11 @@ function Rooms() {
       <RoomConatainer>
         {Rooms.map((room, index) => {
           return (
-            <Room key={index} room={room} />
-            /* <Marginer direction="horizontal" margin="1em" /> */
+            <>
+             
+              <Room key={index} room={room} />
+              <Marginer direction="horizontal" margin="1em" />
+            </>
           );
         })}
       </RoomConatainer>
