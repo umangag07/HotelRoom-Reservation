@@ -7,7 +7,13 @@ const RoomContext = React.createContext();
         rooms:[],
         sortedRooms:[],
         featuredRooms:[],
-        loading:true,
+        loading:false,
+        type:'all',
+        breakfast:false,
+        min_price:0,
+        max_price:0,
+        price:0,
+        capacity:1
      };
 
  //getData 
@@ -16,8 +22,16 @@ const RoomContext = React.createContext();
     //  console.log(rooms)
     let featuredRooms = rooms.filter( room => room.featured === true);
     // console.log(featuredRooms)
+    let max_price =  Math.max(...rooms.map(item=>item.price))
     this.setState({
-        rooms,featuredRooms, sortedRooms:rooms,loading:false
+        rooms,
+        featuredRooms,
+        sortedRooms:rooms,
+        loading:false,
+        price:max_price,
+        max_price
+        
+        
     });
      
  }
@@ -39,11 +53,26 @@ const RoomContext = React.createContext();
       const room = tempRooms.find((room)=> room.id === id);
       return room;
   }
+  handleChange = (event)=>{
+    //   this.state.type = event.target.value;
+    const target = event.target
+    const name = event.target.name
+    const value = event.type === "checkBox" ? target.checked :target.value ;
+    // console.log(name,value);
+    this.setState({
+        [name] : value
+    },this.filterRooms)
+
+
+  }
+  filterRooms = ()=>{
+      console.log("hello")
+  }
 
     render() {
         return (
             <>
-              <RoomContext.Provider value={{...this.state,getRoom:this.getRoom}}>
+              <RoomContext.Provider value={{...this.state,getRoom:this.getRoom,handleChange:this.handleChange}}>
                  {this.props.children}    
               </RoomContext.Provider>  
             </>

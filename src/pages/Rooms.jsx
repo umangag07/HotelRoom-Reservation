@@ -7,7 +7,8 @@ import Title from "../Components/Title";
 import Marginer from "../Components/Marginer";
 import { RoomContext } from "../Context";
 import Room from "../Components/Room";
-import {NavLink} from '../Components/Button'
+import { NavLink } from "../Components/Button";
+import FilterRooms from "../Components/FilterRooms";
 
 const RoomConatainer = styled.div`
   display: flex;
@@ -36,19 +37,10 @@ const RoomConatainer = styled.div`
   }
 `;
 
-const FilterComponent = styled.div`
-       display:flex;
-       width:100vw;
-       height:15vh;
-       border:2px solid red;
-       align-items:center;
-
-`;
-
 function Rooms() {
   const Allrooms = useContext(RoomContext);
-  const Rooms = Allrooms.rooms;
-  // console.log(Rooms)
+  const Rooms = Allrooms.sortedRooms;
+  // console.log(Rooms, Allrooms);
   return (
     <>
       <BackgroundImg height="70vh" imgSrc={room}>
@@ -57,15 +49,13 @@ function Rooms() {
         </Banner>
       </BackgroundImg>
       <Title line="Search Your Room" />
-      <FilterComponent> </FilterComponent>
+      <FilterRooms> </FilterRooms>
       <Marginer direction="vertical" margin="2.5em" />
       <RoomConatainer>
         {Rooms.map((room, index) => {
           return (
-            <>
-              <Room key={index} room={room} />
-              {/* <Marginer direction="horizontal" margin="1em" /> */}
-            </>
+            <Room key={index} room={room} />
+            /* <Marginer direction="horizontal" margin="1em" /> */
           );
         })}
       </RoomConatainer>

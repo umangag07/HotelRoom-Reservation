@@ -52,7 +52,7 @@ const RoomContainer = styled.div`
 
 `;
 export default function Room({ room }) {
-  console.log(room.id);
+  // console.log(room.id);
   const { name, images, price, id } = room;
   return (
     <>
