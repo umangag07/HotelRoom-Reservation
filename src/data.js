@@ -25,10 +25,10 @@ import bkft from "../src/Assets/images/Breakfast.jpg";
 
 export const Data = [
   {
-    roomId: {
+    sys: {
       id: "1",
     },
-    roomFields: {
+    fields: {
       name: "singl-Economy",
       type: "single",
       price: "1500",
@@ -70,10 +70,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "2",
     },
-    roomFields: {
+    fields: {
       name: "Double-Eco",
       type: "family",
       price: "2500",
@@ -114,10 +114,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "3",
     },
-    roomFields: {
+    fields: {
       name: "single-standard",
       type: "single",
       price: "3000",
@@ -158,10 +158,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "4",
     },
-    roomFields: {
+    fields: {
       name: "Delux",
       type: "family",
       price: "4000",
@@ -202,10 +202,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "5",
     },
-    roomFields: {
+    fields: {
       name: "Double standard",
       type: "pair",
       price: "2700",
@@ -246,10 +246,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "6",
     },
-    roomFields: {
+    fields: {
       name: "Double delux",
       type: "pair",
       price: "3500",
@@ -290,10 +290,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "7",
     },
-    roomFields: {
+    fields: {
       name: "single delux",
       type: "single",
       price: "5000",
@@ -334,10 +334,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "8",
     },
-    roomFields: {
+    fields: {
       name: "Delux",
       type: "family",
       price: "6500",
@@ -378,10 +378,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "9",
     },
-    roomFields: {
+    fields: {
       name: "Couple Retreat",
       type: "couple",
       price: "7500",
@@ -425,10 +425,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "10",
     },
-    roomFields: {
+    fields: {
       name: "Couple Retreat",
       type: "couple",
       price: "5500",
@@ -460,10 +460,10 @@ export const Data = [
     },
   },
   {
-    roomId: {
+    sys: {
       id: "11",
     },
-    roomFields: {
+    fields: {
       name: "Double Delux",
       type: "pair",
       price: "4200",

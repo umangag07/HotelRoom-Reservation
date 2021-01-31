@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Data } from "./data";
+// import { Data } from "./data";
+import Client from "./Contentful";
+
 const RoomContext = React.createContext();
 
 class RoomProvider extends Component {
@@ -17,26 +19,38 @@ class RoomProvider extends Component {
   };
 
   //getData
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "jkGrandHotel",
+      });
+      console.log(response);
+      let rooms = this.formatData(response.items);
+      //  console.log(rooms)
+      let featuredRooms = rooms.filter((room) => room.featured === true);
+      // console.log(featuredRooms)
+      let max_price = Math.max(...rooms.map((item) => item.price));
+      this.setState({
+        rooms,
+        featuredRooms,
+        sortedRooms: rooms,
+        loading: false,
+        price: max_price,
+        max_price,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
   componentDidMount() {
-    let rooms = this.formatData(Data);
-    //  console.log(rooms)
-    let featuredRooms = rooms.filter((room) => room.featured === true);
-    // console.log(featuredRooms)
-    let max_price = Math.max(...rooms.map((item) => item.price));
-    this.setState({
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-      price: max_price,
-      max_price,
-    });
+    this.getData()
   }
   formatData(items) {
     let tempItems = items.map((item) => {
-      let id = item.roomId.id;
-      let images = item.roomFields.images.map((image) => image.url);
-      let room = { ...item.roomFields, images, id };
+      let id = item.sys.id;
+      let images = item.fields.images.map((image) => image.fields.file.url);
+      let room = { ...item.fields, images, id };
       return room;
     });
     return tempItems;
@@ -62,40 +76,39 @@ class RoomProvider extends Component {
   };
   filterRooms = () => {
     let { rooms, type, capacity, price, breakfast, max_price } = this.state;
-     console.log(breakfast);
+    console.log(breakfast);
     let tempRooms = [...rooms];
 
     // transform values
 
-    capacity = parseInt(capacity)
+    capacity = parseInt(capacity);
 
     //filter by type
-    if(type !== "all"){
-         tempRooms = tempRooms.filter(room => room.type === type);
+    if (type !== "all") {
+      tempRooms = tempRooms.filter((room) => room.type === type);
     }
     // console.log(tempRooms)
 
     //filter by capacity
 
-    if(capacity !== 1){
-        tempRooms = tempRooms.filter(room => room.capacity >= capacity);
+    if (capacity !== 1) {
+      tempRooms = tempRooms.filter((room) => room.capacity >= capacity);
     }
-    
+
     // filter by price
-    if(price !== max_price){
-        tempRooms = tempRooms.filter(room => room.price <= price);
-    } 
-    this.setState({
-        sortedRooms:tempRooms
-    })
-    // filter by breakfast
-    if(breakfast){
-        tempRooms = tempRooms.filter(room => room.breakfast === true);
+    if (price !== max_price) {
+      tempRooms = tempRooms.filter((room) => room.price <= price);
     }
     this.setState({
-        sortedRooms:tempRooms
-    })
-    
+      sortedRooms: tempRooms,
+    });
+    // filter by breakfast
+    if (breakfast) {
+      tempRooms = tempRooms.filter((room) => room.breakfast === true);
+    }
+    this.setState({
+      sortedRooms: tempRooms,
+    });
   };
 
   render() {

@@ -21,7 +21,7 @@ const FilterComponent = styled.div`
 `;
 function FilterRooms() {
   const context = useContext(RoomContext);
-  console.log(context);
+  // console.log(context);
   const {
     handleChange,
     type,
