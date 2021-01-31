@@ -19,6 +19,10 @@ const FooterSection = styled.div`
   background-color: #c0c0b8;
   margin-top: 25vh;
   justify-content: space-between;
+  @media(max-width:450px){
+   height:70vh;
+
+  }
 `;
 const ReservedSection = styled.div`
   height: 8vh;
@@ -44,11 +48,24 @@ const MainSec = styled.div`
   height: 32vh;
   width: 100%;
   justify-content: space-between;
+  flex-wrap:wrap;
+
+  
 `;
 const LogoSec = styled.div`
   align-items: top;
+  height:10vh;
+  width:17vw;
   flex:2;
   /* border:1px solid red; */
+  @media(max-width:450px){
+    width:100%;
+
+  }
+  @media(max-width:830px){
+    flex:5;
+    width:100vw;
+  }
 `;
 const Linksec = styled.div`
   width: 20vw;
@@ -72,6 +89,10 @@ const Linksec = styled.div`
   h5{
     color:black;
   }
+  @media(max-width:450px){
+    width:100%;
+
+  }
 `;
 const SocialMedia = styled.div`
   width: 20vw;
@@ -86,6 +107,7 @@ const SocialMedia = styled.div`
 const Icons = styled.div`
   display: flex;
   flex:2;
+  width:20vw;
   /* border: 1px solid red; */
   justify-content: space-evenly;
   a{
@@ -93,6 +115,14 @@ const Icons = styled.div`
     :hover{
       color: #a39303;
     }
+  }
+  @media(max-width:450px){
+   width:100vw;
+
+  }
+  @media(max-width:450px){
+   width:100vw;
+
   }
 `;
 

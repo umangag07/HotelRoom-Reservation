@@ -21,6 +21,10 @@ margin:0;
         width:${({width})=> width? width:"10em"};
      height:${({height})=> height? height:"5em"};
   }
+     @media (max-width: 810px) {
+        width:50vw;
+     height:8vh;
+  }
      
 `;
 
