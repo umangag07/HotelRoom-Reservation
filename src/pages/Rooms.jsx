@@ -69,7 +69,7 @@ const RoomNotFound = styled.div`
 function Rooms() {
   const Allrooms = useContext(RoomContext);
   const Rooms = Allrooms.sortedRooms;
-   console.log("hola rooms",Rooms.length);
+  //  console.log("hola rooms",Rooms.length);
   return (
     <>
       <BackgroundImg height="70vh" imgSrc={room}>

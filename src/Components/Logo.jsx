@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import LogoIcon from '../Assets/Logo/logo_.png'
+import LogoIcon from '../Assets/Logo/siteLogo.png'
 import '../index.css'
-import {Link,BrowserRouter as Router} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 
 
 const Logoconatiner = styled.div`
@@ -23,22 +23,14 @@ margin:0;
   }
      
 `;
-const LogoText = styled.div`
-     margin:0;
-     font-size:${({fontSize})=> fontSize ? fontSize: "30px"};
-     font-weight:700;
-     color:${props=>props.color?props.color:"#f1f1f1"};
-     font-family: 'Cabin', sans-serif;
-     
-`;
 
 function Logo(props) {
-    const {width,height,fontSize,color} = props
+    const {width,height,fontSize} = props
     return (
         
         <>
         <Logoconatiner fontSize={fontSize}>
-            <LogoImage width={width} height={height}><img src={LogoIcon} alt="Logo"/></LogoImage>
+            <a href="/"><LogoImage width={width} height={height}><img src={LogoIcon} alt="Logo"/></LogoImage></a>
             <Router>
            </Router>
         </Logoconatiner>

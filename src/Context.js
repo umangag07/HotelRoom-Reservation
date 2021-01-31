@@ -24,7 +24,7 @@ class RoomProvider extends Component {
       let response = await Client.getEntries({
         content_type: "jkGrandHotel",
       });
-      console.log(response);
+      // console.log(response);
       let rooms = this.formatData(response.items);
       //  console.log(rooms)
       let featuredRooms = rooms.filter((room) => room.featured === true);
@@ -66,7 +66,7 @@ class RoomProvider extends Component {
     const target = event.target;
     const name = event.target.name;
     const value = target.type === "checkbox" ? target.checked : target.value;
-    console.log(name, value);
+    // console.log(name, value);
     this.setState(
       {
         [name]: value,
@@ -76,7 +76,7 @@ class RoomProvider extends Component {
   };
   filterRooms = () => {
     let { rooms, type, capacity, price, breakfast, max_price } = this.state;
-    console.log(breakfast);
+    // console.log(breakfast);
     let tempRooms = [...rooms];
 
     // transform values

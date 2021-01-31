@@ -1,3 +1,4 @@
 ## The site is under-development.
 
-### Link-: https://jkgrandhotel.netlify.app
+### You can view this at-: https://jkgrandhotel.netlify.app
+
