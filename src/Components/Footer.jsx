@@ -20,8 +20,9 @@ const FooterSection = styled.div`
   margin-top: 25vh;
   justify-content: space-between;
   @media(max-width:450px){
-   height:70vh;
-
+   height:80vh;
+   flex-direction:row;
+  overflow:hidden;
   }
 `;
 const ReservedSection = styled.div`
@@ -40,6 +41,10 @@ const ReservedSection = styled.div`
     height: 1px;
     width: 80%;
     background-color: #02053b;
+  }
+  @media(max-width:450px){
+    width:100%;
+
   }
 `;
 
@@ -126,6 +131,8 @@ const Icons = styled.div`
   }
 `;
 
+
+
 function Footer() {
  const Context = useContext(RoomContext);
  const {featuredRooms} = Context;
@@ -182,12 +189,12 @@ function Footer() {
              <a href="https://www.twitter.com"><FaTwitterSquare size="20px" /></a>
             </Icons>
           </SocialMedia>
-        </MainSec>
-
+          </MainSec>
         <ReservedSection>
           <span />
           <h7>All rights reserved JkGrandResort @2020</h7>
         </ReservedSection>
+       
       </FooterSection>
     </>
   );
